@@ -1,0 +1,83 @@
+starting instrumentations
+config { loadavgSampleInterval: 2000,
+  memorySampleInterval: 1000,
+  app_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTczYzM0MjE2MDI3ZTYwMTFjYTYyYmVjIiwic3lzdGVtX2lkIjoiNTczYzM0MjlhYzRmZTIwMTFjZjQzNzgwIiwiYXBwX2lkIjoiNTczYzM0YWI2ODY0MDUwMTFjYjJhODcwIiwiaWF0IjoxNDYzNTYzNDM1fQ.gWw6Qhjr5RwQJwnsIWBlnwDnvliQoOvFC9I74lUvcg4',
+  application_id: 'applicationid_service5',
+  service_name: 'service_service5',
+  host: 'localhost' }
+shimming seneca /Users/timoweiss/Development/thesis/shimmedplayground/node_modules/seneca
+seneca was instantiated
+2016-05-18T10:39:47.177Z zpyas30u5m88/1463567987146/74361/- INFO	hello	Seneca/2.0.1/zpyas30u5m88/1463567987146/74361/-	
+E2E time sending metrics: 62ms
+STATUS: 404
+HEADERS: {"content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"38","date":"Wed, 18 May 2016 10:39:48 GMT","connection":"close"}
+BODY: {"statusCode":404,"error":"Not Found"}
+No more data in response.
+2016-05-18T10:39:49.205Z zpyas30u5m88/1463567987146/74361/- INFO	listen	{pin:[role:service5],model:actor}	
+swim.bootstrap: [ '127.0.0.1:39999' ]
+swim.bootstrap err: undefined
+2016-05-18T10:39:50.057Z zpyas30u5m88/1463567987146/74361/- INFO	client	{type:balance,pin:role:service2,model:actor}	
+2016-05-18T10:39:50.063Z zpyas30u5m88/1463567987146/74361/- INFO	client	{type:balance,pin:role:service3,model:actor}	
+2016-05-18T10:39:50.066Z zpyas30u5m88/1463567987146/74361/- INFO	client	{type:balance,pin:role:service4,model:actor}	
+2016-05-18T10:39:50.070Z zpyas30u5m88/1463567987146/74361/- INFO	client	{type:balance,pin:role:service,model:actor}	
+2016-05-18T10:39:50.074Z zpyas30u5m88/1463567987146/74361/- INFO	client	{type:balance,pin:null:true,model:actor}	
+2016-05-18T10:39:50.081Z zpyas30u5m88/1463567987146/74361/- INFO	-	-	ACT	hj112he5bdgn/6bi51eo2ezy2	name:mesh,plugin:define,role:seneca,seq:6,tag:undefined	plugin	mesh       	ACT	aook96f0ljsr/19y8e8571evj	add:client,role:transport,type:balance	client	{type:web,port:59833,host:0.0.0.0,path:/act,protocol:http,timeout:5555,max_listen_attempts:11,attempt_delay:222	
+2016-05-18T10:39:50.088Z zpyas30u5m88/1463567987146/74361/- INFO	-	-	ACT	hj112he5bdgn/6bi51eo2ezy2	name:mesh,plugin:define,role:seneca,seq:6,tag:undefined	plugin	mesh       	ACT	fe9hy9uap2o8/19y8e8571evj	add:client,role:transport,type:balance	client	{type:web,port:51013,host:0.0.0.0,path:/act,protocol:http,timeout:5555,max_listen_attempts:11,attempt_delay:222	
+2016-05-18T10:39:50.094Z zpyas30u5m88/1463567987146/74361/- INFO	-	-	ACT	hj112he5bdgn/6bi51eo2ezy2	name:mesh,plugin:define,role:seneca,seq:6,tag:undefined	plugin	mesh       	ACT	ttq8r13nx16t/19y8e8571evj	add:client,role:transport,type:balance	client	{type:web,port:56656,host:0.0.0.0,path:/act,protocol:http,timeout:5555,max_listen_attempts:11,attempt_delay:222	
+2016-05-18T10:39:50.098Z zpyas30u5m88/1463567987146/74361/- INFO	-	-	ACT	hj112he5bdgn/6bi51eo2ezy2	name:mesh,plugin:define,role:seneca,seq:6,tag:undefined	plugin	mesh       	ACT	o291i2f7ylev/19y8e8571evj	add:client,role:transport,type:balance	client	{type:web,port:55762,host:0.0.0.0,path:/act,protocol:http,timeout:5555,max_listen_attempts:11,attempt_delay:222	
+2016-05-18T10:39:50.103Z zpyas30u5m88/1463567987146/74361/- INFO	-	-	ACT	hj112he5bdgn/6bi51eo2ezy2	name:mesh,plugin:define,role:seneca,seq:6,tag:undefined	plugin	mesh       	ACT	yk5978z9q5lx/19y8e8571evj	add:client,role:transport,type:balance	client	{type:web,port:53508,host:0.0.0.0,path:/act,protocol:http,timeout:5555,max_listen_attempts:11,attempt_delay:222	
+E2E time sending metrics: 42ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"11","date":"Wed, 18 May 2016 10:39:56 GMT","connection":"close"}
+BODY: {"data":{}}
+No more data in response.
+E2E time sending metrics: 34ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"11","date":"Wed, 18 May 2016 10:40:06 GMT","connection":"close"}
+BODY: {"data":{}}
+No more data in response.
+E2E time sending metrics: 33ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:40:16 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.
+E2E time sending metrics: 31ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:40:26 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.
+E2E time sending metrics: 24ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:40:36 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.
+E2E time sending metrics: 26ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:40:46 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.
+E2E time sending metrics: 24ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:40:56 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.
+E2E time sending metrics: 30ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:41:06 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.
+E2E time sending metrics: 23ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:41:16 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.
+E2E time sending metrics: 20ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:41:26 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.
+E2E time sending metrics: 25ms
+STATUS: 200
+HEADERS: {"vary":"origin","content-type":"application/json; charset=utf-8","cache-control":"no-cache","content-length":"24","date":"Wed, 18 May 2016 10:41:36 GMT","connection":"close"}
+BODY: {"data":{"requests":{}}}
+No more data in response.

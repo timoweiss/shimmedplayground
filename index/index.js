@@ -1,24 +1,17 @@
 'use strict';
-require('shimmingtest').start({
-    application_id: '_index',
-    service_name: 'service_index',
-    // host: 'localhost',
-    app_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTczODhlOTNjMGE4MDk0YjFhMjJlMmJkIiwic3lzdGVtX2lkIjoiNTczODhlOWM3MDAyOGY0YjFhMTI2MTAxIiwiYXBwX2lkIjoiNTczODhlYjAzNjBkZjc0YjFhZTIzZTk5IiwiaWF0IjoxNDYzMzI0MzM2fQ.St_OmtVXVZ88GvvhvN7gN84krtpU0PPumCclxq7HMvU'
-});
-
 // require('shimmingtest').start({
 //     application_id: '_index',
 //     service_name: 'service_index',
-//     host: 'localhost',
-//     app_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTczODY1YWMzNzYzNDc5OTlmZWFlZDc5Iiwic3lzdGVtX2lkIjoiNTczODY1Yjg3NGY1ZDc5OTlmMDYyMDJiIiwiYXBwX2lkIjoiNTczODY1ZDRjM2MzOGI5OTlmOWYzOGM3IiwiaWF0IjoxNDYzMzEzODc2fQ.THpNucDk0M93091QKQcha6BtrFqQslpE4bBAUFODmjY'
+//     // host: 'localhost',
+//     app_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTczODhlOTNjMGE4MDk0YjFhMjJlMmJkIiwic3lzdGVtX2lkIjoiNTczODhlOWM3MDAyOGY0YjFhMTI2MTAxIiwiYXBwX2lkIjoiNTczODhlYjAzNjBkZjc0YjFhZTIzZTk5IiwiaWF0IjoxNDYzMzI0MzM2fQ.St_OmtVXVZ88GvvhvN7gN84krtpU0PPumCclxq7HMvU'
 // });
-//
-// const Joi = require('joi');
-//
-// const schema = Joi.object().keys({
-//     role: Joi.string().required(),
-//     optionalValue: Joi.string().valid('test')
-// })
+require('shimmingtest').start({
+    application_id: '_index',
+    service_name: 'service_index',
+    host: 'localhost',
+    app_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTczYzM0MjE2MDI3ZTYwMTFjYTYyYmVjIiwic3lzdGVtX2lkIjoiNTczYzM0MjlhYzRmZTIwMTFjZjQzNzgwIiwiYXBwX2lkIjoiNTczYzM0ODI2ODY0MDUwMTFjYjJhODZiIiwiaWF0IjoxNDYzNTYzMzk0fQ.LwK6eMwd-GYqNXVyDqbe5-jNSo9b8IXoVIwW7keuLiw'
+});
+
 
 const s = require('seneca')();
 
@@ -34,14 +27,25 @@ s.use(function (options) {
     return {name: 'plugin-name-index'}
 
 });
-setTimeout(function () {
-    doAct()
+
+const times = 10;
+let i = 0;
+
+let interval = setInterval(function () {
+    if(times > i) {
+        i++;
+        console.log('running for the', i + 'th time');
+        return doAct()
+    }
+    console.log('I\'m all done', i);
+    clearInterval(interval);
+
     // setTimeout(doAct, 2000);
 }, 7000);
 
 function doAct() {
 
-
+    //
     // console.log('USER_INDEX: act #1');
     // s.act({role: 'service', cmd: 'something'}, {aa: 'cc'}, function callbackFuerIndex(err, data) {
     //     console.log('client_index:', data);

@@ -1,0 +1,27 @@
+index:
+  build: ./index
+  container_name: index
+
+service:
+  build: ./service
+  container_name: service
+
+service1:
+  build: ./service1
+  container_name: service1
+
+service2:
+  build: ./service2
+  container_name: service2
+
+service3:
+  build: ./service3
+  container_name: service3
+
+service4:
+  build: ./service4
+  container_name: service4
+
+service5:
+  build: ./service5
+  container_name: service5
