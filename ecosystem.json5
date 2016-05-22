@@ -1,0 +1,35 @@
+{
+    apps: [
+
+        {
+            name: 'index',
+            script: './index/index.js'
+        },
+
+        {
+            name: 'Service',
+            script: './service/service.js'
+        },
+
+        {
+            name: 'Service2',
+            script: './service2/service2.js'
+        },
+
+        {
+            name: 'Service3',
+            script: './service3/service3.js'
+        },
+
+        {
+            name: 'Service4',
+            script: './service4/service4.js'
+        },
+
+        {
+            name: 'Service5',
+            script: './service5/service5.js'
+        }
+
+    ]
+}
