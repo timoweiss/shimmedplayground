@@ -13,9 +13,6 @@ require('shimmingtest').start({
 });
 
 const s = require('seneca')();
-const joi = require('joi');
-const parambulator = require('parambulator');
-
 
 s.use(function (opts) {
 
