@@ -22,7 +22,7 @@ s.use(function (opts) {
         let that = this;
         setTimeout(function () {
             callback(null, {from: 'service2'})
-        }, Math.floor(Math.random() * 3000) + 100)
+        }, Math.floor(Math.random() * 500) + 100)
 
     });
     return {name: 'plugin-name-service'}
