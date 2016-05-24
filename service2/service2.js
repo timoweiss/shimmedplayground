@@ -18,17 +18,13 @@ const s = require('seneca')();
 
 s.use(function (opts) {
 
-    s.add({cmd: 'somethingelse', role: 'service2'}, function handlerFuerService2(args, callback) {
+    s.add('role:service2', function handlerFuerService2(args, callback) {
         let that = this;
-        // console.log('USER_SERVICE2: rcv #4', args);
         setTimeout(function () {
-            //that.act('role:service3,cmd:somethingreallyelse', function() {
-                callback(null, {from: 'service2'})
-            //});
+            callback(null, {from: 'service2'})
         }, Math.floor(Math.random() * 3000) + 100)
 
     });
     return {name: 'plugin-name-service'}
 });
-// '46.223.181.242:39999'
 s.use('mesh', {auto: true, pins: ['role:service2']});

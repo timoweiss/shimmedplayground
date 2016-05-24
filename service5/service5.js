@@ -16,20 +16,9 @@ const s = require('seneca')();
 
 s.use(function (opts) {
 
-    s.add('role:service5,cmd:crapTest', function handlerFuerService1(args, callback) {
+    s.add('role:service5', function handlerFuerService1(args, callback) {
         let that = this;
         callback(null, {from: 'service5'})
-
-
-        // setTimeout(function () {
-        //     that.act({cmd: 'somethingelse', role: 'service2'}, function callbackFuerService1(err, data) {
-        //
-        //             this.act('role:service3,cmd:somethingreallyelse', function() {
-        //             });
-        //
-        //     });
-        // }, 2000)
-
     });
 
 

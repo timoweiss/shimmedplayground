@@ -16,14 +16,12 @@ const s = require('seneca')();
 
 s.use(function (opts) {
 
-    s.add('role:service,cmd:something', function handlerFuerService1(args, callback) {
+    s.add('role:service', function handlerFuerService1(args, callback) {
         let that = this;
         console.log('USER_SERVICE: rcv #2', args);
         setTimeout(function () {
             console.log('USER_SERVICE: act #3');
-            that.act({cmd: 'somethingelse', role: 'service2'}, function callbackFuerService1(err, data) {
-                //
-                //
+            that.act({role: 'service2'}, function callbackFuerService1(err, data) {
                     this.act('role:service3,cmd:somethingreallyelse', function() {
                         callback(null, {from: 'service'})
                     });

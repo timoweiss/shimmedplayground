@@ -24,7 +24,9 @@ s.use(function (opts) {
         if(times > i) {
             i++;
             console.log('running for the', i + 'th time');
-            s.act('role:service5,cmd:crapTest', function(){});
+            s.act('role:service5', function(){
+                console.log('from service5')
+            });
             return;
         }
 
@@ -33,19 +35,9 @@ s.use(function (opts) {
     }, 3000);
 
 
-    s.add('role:service4,cmd:crapTest', function handlerFuerService1(args, callback) {
-        let that = this;
+    s.add('role:service4', function handlerFuerService1(args, callback) {
+ 
         callback(null, {from: 'service4'})
-
-
-        // setTimeout(function () {
-        //     that.act({cmd: 'somethingelse', role: 'service2'}, function callbackFuerService1(err, data) {
-        //
-        //             this.act('role:service3,cmd:somethingreallyelse', function() {
-        //             });
-        //
-        //     });
-        // }, 2000)
 
     });
 

@@ -12,7 +12,7 @@ const s = require('seneca')();
 
 s.use(function(opts) {
 
-    s.add({cmd:'somethingreallyelse', role:'service3'}, function handlerFuerService2(args, callback) {
+    s.add('role:service3', function handlerFuerService2(args, callback) {
         // console.log('USER_SERVICE3: rcv #4', args);
         setTimeout(function() {
 
