@@ -18,7 +18,10 @@ s.use(function (opts) {
 
     s.add('role:service5', function handlerFuerService1(args, callback) {
         let that = this;
-        callback(null, {from: 'service5'})
+        this.act('role:service', function(){
+
+            callback(null, {from: 'service5'})
+        });
     });
 
 
