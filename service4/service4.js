@@ -9,7 +9,7 @@ require('shimmingtest').start({
     application_id: 'applicationid_service4',
     service_name: 'service_service4',
     // host: 'localhost',
-    "app_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTczYzdmYjA4MWNlODAzODU2YWY4OTU1Iiwic3lzdGVtX2lkIjoiNTczYzdmYmY4NDQyYTYzODU2YTljZDkxIiwiYXBwX2lkIjoiNTczYzdmZTViMDJlNjczODU2MjhmN2FhIiwiaWF0IjoxNDYzNTgyNjkzfQ.Aq8r-6jNpk58bHtaDBOLZw2ZqIBUJ5djuFw5aA9_bT0"
+    "app_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTc0NTViNDQ2MzZjNWU1YzNmMzdmMjYwIiwic3lzdGVtX2lkIjoiNTc0NTViNTU3NzM1NTA1YzNmMjM2MTUyIiwiYXBwX2lkIjoiNTc0NTVjMjhkYmRhYjY1YzNmMmUxMzU2IiwiaWF0IjoxNDY0MTYzMzY4fQ.c1L6_Sr0srOoGAJ5E90AS4gP1tqO8qzrfuwDMYFkj0w"
 });
 
 const s = require('seneca')();
