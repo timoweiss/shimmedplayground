@@ -27,21 +27,24 @@ s.use(function (options) {
     return {name: 'plugin-name-index'}
 
 });
+//
+// const times = 10;
+// let i = 0;
+//
+// let interval = setInterval(function () {
+//     if(times > i) {
+//         i++;
+//         console.log('running for the', i + 'th time');
+//         return doAct()
+//     }
+//     console.log('I\'m all done', i);
+//     clearInterval(interval);
+//
+//     // setTimeout(doAct, 2000);
+// }, 7000);
 
-const times = 10;
-let i = 0;
 
-let interval = setInterval(function () {
-    if(times > i) {
-        i++;
-        console.log('running for the', i + 'th time');
-        return doAct()
-    }
-    console.log('I\'m all done', i);
-    clearInterval(interval);
-
-    // setTimeout(doAct, 2000);
-}, 7000);
+setTimeout(doAct, 10000);
 
 function doAct() {
 

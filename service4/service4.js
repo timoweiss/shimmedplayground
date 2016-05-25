@@ -20,19 +20,25 @@ s.use(function (opts) {
     const times = 5;
     let i = 0;
 
-    let interval = setInterval(function() {
-        if(times > i) {
-            i++;
-            console.log('running for the', i + 'th time');
-            s.act('role:service5', function(){
-                console.log('from service5')
-            });
-            return;
-        }
+    // let interval = setInterval(function() {
+    //     if(times > i) {
+    //         i++;
+    //         console.log('running for the', i + 'th time');
+    //         s.act('role:service5', function(){
+    //             console.log('from service5')
+    //         });
+    //         return;
+    //     }
+    //
+    //     console.log('I\'m all done', i);
+    //     clearInterval(interval);
+    // }, 3000);
 
-        console.log('I\'m all done', i);
-        clearInterval(interval);
-    }, 3000);
+    setTimeout(() => {
+        s.act('role:service5', function(){
+            console.log('from service5')
+        });
+    });
 
 
     s.add('role:service4', function handlerFuerService1(args, callback) {
