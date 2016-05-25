@@ -19,10 +19,8 @@ const s = require('seneca')();
 s.use(function (opts) {
 
     s.add('role:service2', function handlerFuerService2(args, callback) {
-        let that = this;
-        setTimeout(function () {
+            console.log('service2 is sending response')        
             callback(null, {from: 'service2'})
-        }, Math.floor(Math.random() * 300))
 
     });
     return {name: 'plugin-name-service'}
