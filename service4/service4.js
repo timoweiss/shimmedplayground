@@ -9,7 +9,8 @@ require('shimmingtest').start({
     application_id: 'applicationid_service4',
     service_name: 'service_service4',
     // host: 'localhost',
-    "app_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTc0NTViNDQ2MzZjNWU1YzNmMzdmMjYwIiwic3lzdGVtX2lkIjoiNTc0NTViNTU3NzM1NTA1YzNmMjM2MTUyIiwiYXBwX2lkIjoiNTc0NTVjMjhkYmRhYjY1YzNmMmUxMzU2IiwiaWF0IjoxNDY0MTYzMzY4fQ.c1L6_Sr0srOoGAJ5E90AS4gP1tqO8qzrfuwDMYFkj0w"
+    "app_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTc1ZWU2MWIyMTMxOTk1NzI3M2I5NTZiIiwic3lzdGVtX2lkIjoiNTc1ZWU3YzViMDhlN2U2NjI4NGQzMTRkIiwiYXBwX2lkIjoiNTc1ZWU4MTQxZDEwODg2NjI4ZTFlMjIyIiwiaWF0IjoxNDY1ODM3NTg4fQ.3ijGLGY-FPhHkcj_sNAE4SczihTwPQ_oliHq_HZw-EM"
+
 });
 
 const s = require('seneca')();
@@ -42,10 +43,10 @@ s.use(function (opts) {
 
 
     s.add('role:service4', function handlerFuerService1(args, callback) {
-        this.act('role:service', function(){
+//        this.act('role:service', function(){
 
             callback(null, {from: 'service4'})
-        });
+  //      });
 
     });
 

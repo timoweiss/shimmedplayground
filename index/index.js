@@ -9,7 +9,8 @@ require('shimmingtest').start({
     application_id: '_index',
     service_name: 'service_index',
     // host: 'localhost',
-    "app_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTc0NTViNDQ2MzZjNWU1YzNmMzdmMjYwIiwic3lzdGVtX2lkIjoiNTc0NTViNTU3NzM1NTA1YzNmMjM2MTUyIiwiYXBwX2lkIjoiNTc0NTViNjlkYmRhYjY1YzNmMmUxMzUxIiwiaWF0IjoxNDY0MTYzMTc3fQ.UMpU2tsRX4Yb5dxFGg4nsne7w89HRaff4BWagbpvdb4"
+    "app_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTc1ZWU2MWIyMTMxOTk1NzI3M2I5NTZiIiwic3lzdGVtX2lkIjoiNTc1ZWU3YzViMDhlN2U2NjI4NGQzMTRkIiwiYXBwX2lkIjoiNTc1ZWU3ZmIxZDEwODg2NjI4ZTFlMjFlIiwiaWF0IjoxNDY1ODM3NTYzfQ.yeg2zzc_Epk0rzrDgaT1fFKYlqPSLI7MqWYP5Y_R6gY"
+
 });
 
 
