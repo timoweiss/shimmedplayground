@@ -18,11 +18,8 @@ const s = require('seneca')();
 s.use(function (opts) {
 
     s.add('role:service5', function handlerFuerService1(args, callback) {
-        let that = this;
-        this.act('role:service', function(err, data){
-            console.log('service5 response from role:service', err, data);
-            callback(null, {from: 'service5'})
-        });
+        
+        callback(null, {from: 'service5'})
     });
 
 

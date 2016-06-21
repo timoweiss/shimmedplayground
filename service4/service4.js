@@ -39,7 +39,7 @@ s.use(function (opts) {
         s.act('role:service5', function(){
             console.log('from service5')
         });
-    });
+    }, 5000);
 
 
     s.add('role:service4', function handlerFuerService1(args, callback) {
