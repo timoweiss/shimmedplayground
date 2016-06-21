@@ -43,12 +43,19 @@ s.use(function (options) {
 //
 //     // setTimeout(doAct, 2000);
 // }, 7000);
+let a = [];
+let j = 0;
+
+for(var i = 0; i < 1000; i++) {
+    a.push(Math.floor(Math.random() * 20000) + 100);
+}
 
 
 setTimeout(doAct, 10000);
 
 function doAct() {
-
+    setTimeout(doAct, a[j]);
+    j++;
     console.log('USER_INDEX: act #1');
     s.act({role: 'service'}, function callbackFuerIndex(err, data) {
         console.log('client_index:', data);
