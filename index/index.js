@@ -54,6 +54,9 @@ for(var i = 0; i < 5; i++) {
 setTimeout(doAct, 10000);
 
 function doAct() {
+    if(!a[j]) {
+        return;
+    }
     setTimeout(doAct, a[j]);
     j++;
     console.log('USER_INDEX: act #1');
