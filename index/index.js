@@ -46,7 +46,7 @@ s.use(function (options) {
 let a = [];
 let j = 0;
 
-for(var i = 0; i < 5; i++) {
+for(var i = 0; i < 1000; i++) {
     a.push(Math.floor(Math.random() * 20000) + 100);
 }
 
