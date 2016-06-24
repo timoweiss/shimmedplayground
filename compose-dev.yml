@@ -2,12 +2,8 @@ index:
   build: ./index
   container_name: index
 
-service:
-  build: ./service
-  container_name: service
-
 service1:
-  build: ./service1
+  build: ./service
   container_name: service1
 
 service2:

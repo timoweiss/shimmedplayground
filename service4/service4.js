@@ -35,11 +35,11 @@ s.use(function (opts) {
     //     clearInterval(interval);
     // }, 3000);
 
-    setTimeout(() => {
-        s.act('role:service5', function(){
-            console.log('from service5')
-        });
-    }, 5000);
+    // setTimeout(() => {
+    //     s.act('role:service5', function(){
+    //         console.log('from service5')
+    //     });
+    // }, 5000);
 
 
     s.add('role:service4', function handlerFuerService1(args, callback) {

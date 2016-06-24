@@ -16,8 +16,10 @@ s.use(function(opts) {
     s.add('role:service3', function handlerFuerService2(args, callback) {
         // console.log('USER_SERVICE3: rcv #4', args);
         setTimeout(function() {
-
-            callback(null, {from:'service3'})
+            s.act({role: 'service4'}, function callbackFuerIndex(err, data) {
+                console.log('client_index:', data);
+                callback(null, {from:'service3'})
+            })
         }, Math.floor(Math.random() * 100))
 
     });
