@@ -47,7 +47,7 @@ let a = [];
 let j = 0;
 
 for(var i = 0; i < 5; i++) {
-    a.push(Math.floor(Math.random() * 2000) + 10);
+    a.push(Math.floor(Math.random() * 20000) + 100);
 }
 
 
