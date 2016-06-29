@@ -1,14 +1,6 @@
 'use strict';
-// require('shimmingtest').start({
-//     application_id: '_index',
-//     service_name: 'service_index',
-//     // host: 'localhost',
-//     app_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTczODhlOTNjMGE4MDk0YjFhMjJlMmJkIiwic3lzdGVtX2lkIjoiNTczODhlOWM3MDAyOGY0YjFhMTI2MTAxIiwiYXBwX2lkIjoiNTczODhlYjAzNjBkZjc0YjFhZTIzZTk5IiwiaWF0IjoxNDYzMzI0MzM2fQ.St_OmtVXVZ88GvvhvN7gN84krtpU0PPumCclxq7HMvU'
-// });
+
 require('shimmingtest').start({
-    application_id: '_index',
-    service_name: 'service_index',
-    // host: 'localhost',
     "app_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJydWlkIjoiNTc1ZWU2MWIyMTMxOTk1NzI3M2I5NTZiIiwic3lzdGVtX2lkIjoiNTc1ZWU3YzViMDhlN2U2NjI4NGQzMTRkIiwiYXBwX2lkIjoiNTc1ZWU3ZmIxZDEwODg2NjI4ZTFlMjFlIiwiaWF0IjoxNDY1ODM3NTYzfQ.yeg2zzc_Epk0rzrDgaT1fFKYlqPSLI7MqWYP5Y_R6gY"
 
 });
