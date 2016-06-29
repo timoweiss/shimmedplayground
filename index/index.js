@@ -47,7 +47,7 @@ let a = [];
 let j = 0;
 
 for(var i = 0; i < 1000; i++) {
-    a.push(Math.floor(Math.random() * 20000) + 100);
+    a.push(Math.floor(Math.random() * 100) + 10);
 }
 
 
@@ -55,6 +55,11 @@ setTimeout(doAct, 10000);
 
 function doAct() {
     if(!a[j]) {
+        console.log('doooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeee')
+        console.log('doooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeee')
+        console.log('doooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeee')
+        console.log('doooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeee')
+        console.log('doooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeeedoooooooooneeeeee')
         return;
     }
     setTimeout(doAct, a[j]);

@@ -20,18 +20,18 @@ s.use(function (opts) {
     s.add('role:service', function handlerFuerService1(args, callback) {
         let that = this;
         console.log('USER_SERVICE: rcv #2', args);
-        setTimeout(function () {
+        // setTimeout(function () {
             console.log('USER_SERVICE: act #3');
             that.act({role: 'service2'}, function callbackFuerService1(err, data) {
                 let dad = this;
-                setTimeout(function () {
+                // setTimeout(function () {
                     dad.act('role:service3,cmd:somethingreallyelse', function() {
                         callback(null, {from: 'service'})
                     });
-                }, Math.floor(Math.random() * 100))
+                // }, Math.floor(Math.random() * 100))
 
             });
-        }, Math.floor(Math.random() * 100))
+        // }, Math.floor(Math.random() * 100))
 
     });
 

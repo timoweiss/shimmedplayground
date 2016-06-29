@@ -44,8 +44,10 @@ s.use(function (opts) {
 
     s.add('role:service4', function handlerFuerService1(args, callback) {
 //        this.act('role:service', function(){
+            setTimeout(function() {
 
-            callback(null, {from: 'service4'})
+                callback(null, {from: 'service4'})
+            }, 100);
   //      });
 
     });
